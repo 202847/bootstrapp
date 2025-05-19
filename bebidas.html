@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Codificacao pra acento funcionar -->
+    <meta charset="UTF-8">
+    <!-- Ajusta pra qualquer tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo da aba -->
+    <title>Bebidas - Ifud</title>
+    <!-- Bootstrap pra ficar bonito -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Icones pro logo e rodape -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Menu pra navegar no site -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- Logo com bolo que leva pra home -->
+            <a class="navbar-brand" href="index.html"><i class="bi bi-cake2-fill"></i> Ifud</a>
+            <!-- Botao pra menu em celular -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links do menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Volta pro inicio -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <!-- Vai pros pedido -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pedido.html">Pedido</a>
+                    </li>
+                    <!-- Menu de categoria, ta na bebida -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <!-- Opcoes do menu -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pizza.html">Pizza</a></li>
+                            <li><a class="dropdown-item" href="hamburger.html">Hamburger</a></li>
+                            <li><a class="dropdown-item" href="sushi.html">Sushi</a></li>
+                            <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
+                        </ul>
+                    </li>
+                    <!-- Fala com a gente -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                <!-- Busca rapida -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabecalho vermelho pras bebida -->
+    <header class="bg-danger text-white text-center py-5">
+        <div class="container">
+            <!-- Titulo das bebida -->
+            <h1>Nossas Bebidas</h1>
+            <!-- Frase pra dar sede -->
+            <p class="lead">Refresca com nossa opcao!</p>
+        </div>
+    </header>
+
+    <!-- Mostra as bebida em card -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <!-- Titulo das bebida -->
+            <h2 class="text-center mb-4">Bebidas</h2>
+            <!-- Grade com 3 coluna -->
+            <div class="row">
+                <!-- Refrigerante de cola -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="bebida1">
+                        <!-- Foto refrescante -->
+                        <img src="imagens/bebida1.jpg" class="card-img-top" alt="Refrigerante Cola" style="width: 100%;">
+                        <div class="card-body">
+                            <!-- Nome -->
+                            <h5 class="card-title">Refrigerante Cola</h5>
+                            <!-- O que e -->
+                            <p class="card-text">Lata de 350ml de refrigerante cola gelado.</p>
+                            <!-- Botao do carrinho -->
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Suco de laranja -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="bebida2">
+                        <img src="imagens/bebida2.jpg" class="card-img-top" alt="Suco de Laranja" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Suco de Laranja</h5>
+                            <p class="card-text">Suco natural de laranja, 500ml.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agua sem gas -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="bebida3">
+                        <img src="imagens/bebida3.jpg" class="card-img-top" alt="Água Mineral" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Água Mineral</h5>
+                            <p class="card-text">Garrafa de 500ml de agua mineral sem gas.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Refrigerante de guarana -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="bebida4">
+                        <img src="imagens/bebida4.jpg" class="card-img-top" alt="Refrigerante Guaraná" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Refrigerante Guaraná</h5>
+                            <p class="card-text">Lata de 350ml de refrigerante guarana.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cha de limao -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="bebida5">
+                        <img src="imagens/bebida5.jpg" class="card-img-top" alt="Chá Gelado Limão" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Chá Gelado Limão</h5>
+                            <p class="card-text">Cha gelado de limao, garrafa de 500ml.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Suco de uva -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="bebida6">
+                        <img src="imagens/bebida6.jpg" class="card-img-top" alt="Suco de Uva" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Suco de Uva</h5>
+                            <p class="card-text">Suco natural de uva, 500ml.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agua com gas -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="bebida7">
+                        <img src="imagens/bebida7.jpg" class="card-img-top" alt="Água com Gás" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Água com Gás</h5>
+                            <p class="card-text">Garrafa de 500ml de agua mineral com gas.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Refrigerante de limao -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="bebida8">
+                        <img src="imagens/bebida8.jpg" class="card-img-top" alt="Refrigerante Limão" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Refrigerante Limão</h5>
+                            <p class="card-text">Lata de 350ml de refrigerante sabor limao.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Suco de abacaxi -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="bebida9">
+                        <img src="imagens/bebida9.jpg" class="card-img-top" alt="Suco de Abacaxi" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Suco de Abacaxi</h5>
+                            <p class="card-text">Suco natural de abacaxi, 500ml.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodape com info da empresa -->
+    <footer class="bg-dark text-white text-center py-5">
+        <!-- Direito autoral -->
+        <p>© 2025 - tiburso soft</p>
+        <!-- Slogan da empresa -->
+        <p>reunindo Solucoes!</p>
+        <!-- Rede social -->
+        <p>
+            <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-github"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-envelope-fill"></i></a>
+        </p>
+    </footer>
+
+    <!-- Script do Bootstrap pra menu funcionar -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</body>
+</html>

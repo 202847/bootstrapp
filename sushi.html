@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Codificacao pra acento nao dar problema -->
+    <meta charset="UTF-8">
+    <!-- Ajusta pra qualquer tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo da aba -->
+    <title>Sushi - Ifud</title>
+    <!-- Bootstrap pra ficar bonito -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Icones pro logo e rodape -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Menu pra navegar no site -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- Logo com bolo que leva pra home -->
+            <a class="navbar-brand" href="index.html"><i class="bi bi-cake2-fill"></i> Ifud</a>
+            <!-- Botao pra menu em celular -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links do menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Volta pro inicio -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <!-- Vai pros pedido -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pedido.html">Pedido</a>
+                    </li>
+                    <!-- Menu de categoria, ta no sushi -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <!-- Opcoes do menu -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pizza.html">Pizza</a></li>
+                            <li><a class="dropdown-item" href="hamburger.html">Hamburger</a></li>
+                            <li><a class="dropdown-item" href="sushi.html">Sushi</a></li>
+                            <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
+                        </ul>
+                    </li>
+                    <!-- Fala com a gente -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                <!-- Busca rapida -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabecalho amarelo pros sushi -->
+    <header class="bg-warning text-white text-center py-5">
+        <div class="container">
+            <!-- Titulo dos sushi -->
+            <h1>Nossos Sushis</h1>
+            <!-- Frase pra dar vontade -->
+            <p class="lead">Se delicia com nossa selecao japonesa!</p>
+        </div>
+    </header>
+
+    <!-- Mostra os sushi em card -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <!-- Titulo dos sushi -->
+            <h2 class="text-center mb-4">Sushis</h2>
+            <!-- Grade com 3 coluna -->
+            <div class="row">
+                <!-- Sushi california -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="sushi1">
+                        <!-- Foto que da fome -->
+                        <img src="imagens/sushi1.jpg" class="card-img-top" alt="Sushi California Roll" style="width: 100%;">
+                        <div class="card-body">
+                            <!-- Nome -->
+                            <h5 class="card-title">California Roll</h5>
+                            <!-- O que tem -->
+                            <p class="card-text">Kani, abacate e pepino com gergelim, 8 peca.</p>
+                            <!-- Botao do carrinho -->
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sushi philadelphia -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="sushi2">
+                        <img src="imagens/sushi2.jpg" class="card-img-top" alt="Sushi Philadelphia Roll" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Philadelphia Roll</h5>
+                            <p class="card-text">Salmao fresco, cream cheese e cebolinha, 8 peca.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Temaki de salmao -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="sushi3">
+                        <!-- Erro de digitacao mantido -->
+                        <img src="imagens/suschi3.jpg" class="card-img-top" alt="Temaki Salmão Grelhado" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Temaki Salmão Grelhado</h5>
+                            <p class="card-text">Cone de alga com salmao grelhado e arroz.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sushi quente -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="sushi4">
+                        <img src="imagens/sushi4.jpg" class="card-img-top" alt="Hot Philadelphia" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Hot Philadelphia</h5>
+                            <p class="card-text">Sushi frito com salmao, cream cheese e molho, 8 peca.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nigiri de salmao -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="sushi5">
+                        <img src="imagens/sushi5.jpg" class="card-img-top" alt="Nigiri Salmão" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Nigiri Salmão</h5>
+                            <p class="card-text">Fatias de salmao cru sobre arroz, 4 peca.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sushi de camarao -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="sushi6">
+                        <img src="imagens/sushi6.jpg" class="card-img-top" alt="Uramaki Camarão" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Uramaki Camarão</h5>
+                            <p class="card-text">Camarao frito, cream cheese e gergelim, 8 peca.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sashimi de atum -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="sushi7">
+                        <img src="imagens/sushi7.jpg" class="card-img-top" alt="Sashimi Atum" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Sashimi Atum</h5>
+                            <p class="card-text">Fatias fina de atum fresco, 10 peca.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sushi de salmao fino -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="sushi8">
+                        <img src="imagens/sushi8.jpg" class="card-img-top" alt="Hosomaki Salmão" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Hosomaki Salmão</h5>
+                            <p class="card-text">Rolinho fino de salmao e arroz, 8 peca.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Temaki de kani -->
+                <div class="col-md-4 mb-4">
+                    <div class="card" id="sushi9">
+                        <img src="imagens/sushi9.jpg" class="card-img-top" alt="Temaki Kani" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Temaki Kani</h5>
+                            <p class="card-text">Cone de alga com kani, pepino e arroz.</p>
+                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodape com info da empresa -->
+    <footer class="bg-dark text-white text-center py-5">
+        <!-- Direito autoral -->
+        <p>© 2025 - tiburso soft</p>
+        <!-- Slogan da empresa -->
+        <p>reunindo Solucoes!</p>
+        <!-- Rede social -->
+        <p>
+            <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-github"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-envelope-fill"></i></a>
+        </p>
+    </footer>
+
+    <!-- Script do Bootstrap pra menu funcionar -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</body>
+</html>
